@@ -1,0 +1,18 @@
+<html ng-csp ng-app>
+<head>
+  <title>ts-hermit options</title>
+  <script src="js/vendor/angular.min.js" type="text/javascript"></script>
+  <script src="options.js"></script>
+</head>
+
+
+<body ng-controller="RootCtrl">
+  <h1>ts-hermit options</h1>
+
+  Name (like printed in ts schedule table):
+  <input type="text" ng-model="name">
+  <br>
+  <button ng-click="save()">Save</button>
+  <span style="color: green">{{status}}</span>
+</body>
+</html>

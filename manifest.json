@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "ts-hermit",
+  "version": "0.1",
+  "description": "TeamScheduler schedule filter",
+
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+
+  "options_page": "options.html",
+
+  "content_scripts": [{
+    "matches": [
+      "http://ts.llp.pl/board*"
+    ],
+
+    "js": [
+      "js/vendor/jquery-1.8.3.min.js",
+      "js/content.js"
+    ],
+
+    "run_at": "document_end"
+  }]
+}
